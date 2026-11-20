@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite mostrar correctamente los acentos
+     y caracteres especiales como la letra ñ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Ajusta el área de visualización al ancho de la pantalla-->
+    <title>Página de Isaa / Hobbies y pasatiemposs</title>
+
+    <!-- Resume el contenido de la página, Google puede usarlo
+       en sus resultados de búsqueda -->
+       <meta name="description"
+       content="Página de Isabel, donde comparto mis hobbies y pasatiempos.">
+
+       <!-- name = "keywords" ayuda a los motores de búsqueda a identificar
+        el contenido de la página --->
+        <meta name="keywords"
+        content="Isabel, hobbies y pasatiempos, libros y música">
+
+       <!-- name = "author" indica el autor de la página --->
+        <meta name="author" content="Karla Isabel García">
+
+        <!--Aviso de contenido Propio -->
+        <meta name="copyright" content="©︎ 2026 Karla Isabel García.
+        Todos los derechos reservados.">
+
+         <!-- ACTIVIDAD 3. Cargamos el CSS de Bootstrap desde Internet. -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+<!-- Conectamos nuestro CSS, debe de coincidir en la misma carpeta HTML-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container my-4"></div>
+
+    <!-- Contenido de la página, título principal de la página-->
+     <!-- Style aplica un estilo CSS y color del encabezado -->
+        <h1 style="color: navy;">Bienvenido a la página de Isa</h1>
+    <!-- Este es un párrafo de ejemplo -->
+        <p>Esta es una simple página creada con HTML.</p>
+     <!-- ========== ALERTA ============ -->
+     <div class="alert alert-info" role="alert">
+        ¡Bienvenido! Aqui comparto mis gustos por el baile, la música y los videojuegos.
+     </div>
+
+     <!-- ========== BOTONES PARA NAVEGAR ========== -->
+      <!-- href indica la ruta del archivo al que se quiere navegar. id="pasatiempos" -->
+     <nav class="navbar navbar-expand-lg bg-light mb-4" 
+         aria-label="Secciones de la página"> 
+         <div class="container-fluid">
+           <!--href= #inicio lleva al elemento con id="inicio" -->  
+           <a class="navbar-brand" href="#inicio"> Página de Isabel </a>
+
+           <!---  #menu debe coincidir con el id menu -->
+           <button class="navbar-toggler"
+                   type="button"
+                   data-bs-toggle="collapse"
+                   data-bs-target= "#menu"
+                   aria controls= "menu"
+                   aria expanted="false"
+                   aria label=" Abrir o cerrar menú"
+                   <span class="navbar-toggler-icon"></span>
+           </button>
+    
+           <div class="collapse navbar-collapse" id="menu">
+
+                </div class="navbar-nav gap-2">
+                      <a href="#pasatiempos" class="btn btn-primary">
+                       Mis pasatiempos
+                       </a>
+                    <a href="#comidas" class="btn btn-succes mb-2">
+                       Mis comidas favoritas
+                    </a>
+                    <a href="#planes" class="btn btn-warning mb-2">
+                       Mis planes para desconectarme
+                </a>
+            </div>
+        </div>   
+    </div> 
+</nav>  
+
+
+    <!-- ============ PRESENTACIÓN ============ -->
+    <!-- h2 sirve para crear un subtitulo-->
+    <h2>Me gusta mucho la música y el baile</h2>
+    <!-- h3 se puede organizar un subtema dentro de h2 -->
+    <h3>Me gusta ir al gym y pasar tiempo con mi familia y amigos</h3>
+    <!-- h4 se utiliza para subdividir aún más el contenido
+     en detalles menores -->
+    <h4>Disfruto leer y pronto espero terminar la novela El Ruiseñor de  Kristin Hannah</h4>
+    <!-- h5 se usa para agregar detalles adicionales 
+     o información específica -->
+    <h5>Disfruto estudiar con música, sobretodo con la de Joaquín Sabina</h5>
+    <!-- h6 se utiliza para notas o detalles 
+     adicionales muy esopecíficos-->
+    <h6>Soy amante de las experiencias, pues considero que los vivencias y lo que hacemos con ellas son las que nos forman y hacen a nuestra escencia</h6>
+
+
+
+    <!------------CARRUSEL-------------->
+    <section class="mt-4">
+        <h2 class="textt-primary">Mis gustos en imágenes</h2>
+        <!-- El carrusel crea el componente y slide agrega la transición 
+         el id permite que las flechas encuentren el carrusel -->
+         <div id="carrusel" class="carousel slide bg-dark">
+
+
+         </div class="carousel-inner">
+           <div class="carousel-item active">
+             <img
+                src="img/favs.jpg"
+                class="d-block w-100"
+                alt="Imagen de programación">
+           </div>
+           <div class="carousel-item">
+                <img
+                src="img/snacks.jpg"
+                class="d-block w-100"
+                alt="Imagen de cine">
+           </div>
+           </div class="carousel-item">
+              <img
+                  src="img/JB.jpg"
+                  class="d-block w-100"
+                  alt="imagen de baile"
+         </div>
+        </div>
+        
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target=" #carrusel"
+                data-bs-slide="prev"
+                aria label="Imagen anterior">
+                <span class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+        </button>
+        
+        <button class="carousel-control-next".
+                type="button"
+                data-bs-target="#carrusel"
+                data-bs-slide="next"
+                aria label="Imagen siguiente">
+                <span class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+        </button>
+    </div>
+    </section>
+
+
+    <!-- =============== TARJETAS ============== -->
+     <section class="mt-4">
+        <h2 class="text_primary">Acerca de mis gustos</h2>
+        <!-- Tarjeta básica card crea el contenedor -->
+         <div class="card mb-4">
+            <!-- card body crea el contenido de la terjeta -->
+            <div class="card-body">
+                <h5 class="card-title">Programación</h5>
+                <p class="card-text">Me gusta mucha bailar y aprender cosas nuevas</p>
+                    <!-- Este en lace lleva a la tabla de mis planes-->
+                <a href="#planes" class="btn btn-primary">Conoce de mis planes</a>
+            </div>
+        <div>
+<!--Tarjeta con Imagen Usamos la EL Ruiseñor-->
+    <div class="card mb-4">
+
+
+<!-- src es la ruta de la imagen, alt describe la imagen
+ width="300" le da un ancho de 300 pixeles a la imagen-->
+      <img src="https://www.bing.com/images/search?view=detailV2&ccid=qPZACemC&id=A008A35D4901803264038C8672A095AE630606FD&thid=OIP.qPZACemCLNRD53pKYDZ0mwHaLY&mediaurl=https%3a%2f%2f4.bp.blogspot.com%2f-BvR6iU-Mt9A%2fV2l70NkkysI%2fAAAAAAAAKqU%2f1zgYVlHyosIZuXat0YVtKDXHKRXUTTneACLcB%2fs1600%2fportada-el-ruisenor-kristin-hannah.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.a8f64009e9822cd443e77a4a6036749b%3frik%3d%252fQYGY66VoHKGjA%26pid%3dImgRaw%26r%3d0&exph=1600&expw=1041&q=el+ruise%c3%b1or+hannah+kristin&FORM=IRPRST&ck=DA1AEAA5E8D99E58A0B28415F20F4D06&selectedIndex=0&itb=0" 
+            alt="imagen El Ruiseñor" width="300">
+            class="img-fluid">
+
+        <div class="card-body">
+            <h3 class="card-title">Lectura en proceso: El Ruiseñor</h3>
+            <p class="card-text">Disfruto leer, mantenerme en movimiento y amo escuchar música. Además, me emociona terminar este libro para poder compartir mis veredictos.</p>
+                <a href="#pasatiempos" class="btn btn-danger">Conoce mis próximas lecturas</a>
+        </div>
+    </div>
+
+<!--Tarjeta con Imagen
+                Usamos la imagen de JB-->
+    <div class="card mb-4">
+      <img  
+
+            src="https://i.blogs.es/21df24/spider/1200_900.jpeg" 
+            alt="imagen mi playlist"
+            width="300"
+            class="img-fluid">
+        <div class="card-body">
+            <h3 class="card-title">Mis favs del momento</h3>
+            <p class="card-text">Me gusta mucho escuchar canciones nuevas</p>
+                <a href="#pasatiempos" class="btn btn-danger">Conoce mis nuevos descubrimientos</a>
+        </div>
+    </div>
+
+<!--Tarjeta con Imagen
+                Usamos la imagen de baile-->
+    <div class="card mb-4">
+        <div class="card-header">
+            Ideas de comida
+        </div>
+        <img 
+            src="img/Baile Lujo 3.jpeg" 
+            alt="imagen baile"
+            width="300"
+            class="img-fluid">
+        <div class="card-body">
+            <h3 class="card-title">Comida </h3>
+            <p class="card-text">Disfruto cuidar de mi alimentación probando recetas nuevas</p>
+                <a href="#pasatiempos" class="btn btn-danger">Conoce mis pasatiempos</a>
+        </div>
+    </div>
+</section>
+
+<br>
+<img src="img/concierto.png"
+alt="Imagen de persona leyendo" width="300">
+<img src="img/baile.png" width="300">
+
+
+    
+
+<!-- LISTA NO ORDENADA -->
+<section>
+    <h2>Cosas que hago en mi tiempo libre</h2>
+    <!-- ul crea una lista no ordenada, li crea un elemento de la lista-->
+    <ul>
+        <li>Ver películas</li>
+        <li>Escuchar música</li>
+        <li>Bailar</li>
+        <li>Hacer snacks</li>
+    </ul>
+ </section>
+
+    
+
+<!-- LISTA ORDENADA -->
+ <section>
+    <h2>Mis comidas favoritas</h2>
+    <!-- ol crea una lista ordenada, li crea un elemento de la lista-->
+    <ol>
+        <li>Pasta con camarones</li>
+        <li>Hamburguesas</li>
+        <li>Tacos Gobernador</li>
+        <li>Cortes de carne </li>
+    </ol>
+</section>
+<!--Tabla -->
+<h2>Mis planes para desconectarme</h2>
+<table border="1">
+    <!-- tr crea una fila de la tabla, th crea un encabezado de la tabla-->
+    <tr>
+        <th>Tiempo disponible</th>
+        <th>Planes</th>
+        <th>Qué necesito</th>
+    </tr>
+    <!-- td crea una celda de la tabla -->
+    <tr>
+        <td>30  minutos</td>
+        <td>Escuchar musica</td>
+        <td>Escuchar música</td>
+    </tr>
+    <tr>
+        <td>30 minutos</td>
+        <td>Reanudar mi lectura</td>
+        <td>Libro</td>
+    </tr>
+
+    <tr> 
+        <td>2 horas</td>
+        <td>Ver una película</td>
+        <td>Televisión y palomitas</td>
+    </tr>
+</table border="1" style="color:hotpink (255, 0, 0);">
+
+
+<!-- ACTIVIDAD 3. Cargamos el JavaScript de Bootstrap.
+         Se usa en componentes interactivos, como los menús desplegables. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
+
+
+
